@@ -1,0 +1,9 @@
+{
+  "admin" : {
+    "fullName": "Administrator",
+    "username" : "cafe4it",
+    "email" : "cafe4it@gmail.com",
+    "password" : "@XuanCong@33",
+    "roles" : ["admin","moderator","user","guest"]
+  }
+}

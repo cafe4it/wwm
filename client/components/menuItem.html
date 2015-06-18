@@ -1,0 +1,8 @@
+<template name="MenuItem">
+    <a href="{{state$props.href}}" class="{{state$props.className}}">
+        {{#if state$props.icon}}
+        <i class="{{state$props.icon}}"></i>
+        {{/if}}
+        {{state$props.text}}
+    </a>
+</template>

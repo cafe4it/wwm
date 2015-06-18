@@ -1,0 +1,49 @@
+<head>
+    <meta charset="utf-8">
+    <title>Watch With Me</title>
+    <meta content="watch porn, watch together,porn chat" name="keywords">
+    <meta content="WatchWithMe -Watch Porn Clip together and chat" name="description">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <link href="images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+</head>
+
+<template name="mainLayout">
+    <div id="home" class="boxed">
+        {{> Template.dynamic template=top}}
+        {{> Template.dynamic template=main}}
+        {{> Template.dynamic template=bottom}}
+    </div>
+</template>
+
+<template name="header">
+    <div class="ui menu">
+        <div class="header item">
+            Watch With Me!
+        </div>
+        {{> render component='MenuItem' name='home' href='/' text='Home' class='orange item' icon='home icon'}}
+        {{#if currentUser}}
+            {{> render component='MenuItem' name='myChannel' href='/my-channel' text='My Channel' class='red item' icon='wifi icon'}}
+        {{else}}
+            {{> render component='MenuItem' name='createChannel' href='/create-channel' text='Create Channel' class='blue item' icon='wizard icon'}}
+        {{/if}}
+        {{> render component='MenuItem' name='faq' href='/faq' text='FAQ' class='green item' icon='help circle icon'}}
+        <div class="right menu">
+            {{> render component='MenuItem' name='sign-up' href='/sign-up' text='Sign Up' class='item' icon='add user icon'}}
+            {{> signIn}}
+            <div class="ui dropdown item">
+                <i class="world icon"></i>
+                English
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a class="item">English</a>
+                    <a class="item">Russian</a>
+                    <a class="item">Spanish</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="footer">
+
+</template>
