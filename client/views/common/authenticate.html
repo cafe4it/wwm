@@ -1,0 +1,48 @@
+<template name="Authenticate">
+    <div class="ui page grid">
+        <div class="column row">
+            <div class="ui two column middle aligned relaxed fitted stackable grid">
+                <div class="column">
+                    <form id="registerForm" class="ui form segment">
+                        <div class="field">
+                            <label>Username</label>
+                            <div class="ui left icon input">
+                                <input placeholder="Username" type="text">
+                                <i class="user icon"></i>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Password</label>
+                            <div class="ui left icon input">
+                                <input type="password">
+                                <i class="lock icon"></i>
+                            </div>
+                        </div>
+                        <div class="ui green submit button">Join now</div>
+                    </form>
+                </div>
+
+                <div class="six wide column">
+                    <div id="loginForm" class="ui form segment">
+                        <div class="field">
+                            <label>Username</label>
+                            <div class="ui left icon input">
+                                <input name="username" placeholder="Username \ Email" type="text" id="txtLogin_Username">
+                                <i class="user icon"></i>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Password</label>
+                            <div class="ui left icon input">
+                                <input name="password" type="password" id="txtLogin_Password">
+                                <i class="lock icon"></i>
+                            </div>
+                        </div>
+                        <div class="ui blue submit button" id="btnLogin">Sign In</div> &nbsp; <a href="/reset-password"> Reset Password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

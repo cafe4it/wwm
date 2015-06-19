@@ -28,8 +28,23 @@
         {{/if}}
         {{> render component='MenuItem' name='faq' href='/faq' text='FAQ' class='green item' icon='help circle icon'}}
         <div class="right menu">
-            {{> render component='MenuItem' name='sign-up' href='/sign-up' text='Sign Up' class='item' icon='add user icon'}}
-            {{> signIn}}
+            {{#if currentUser}}
+                <div class="ui dropdown item">
+                    <i class="user icon"></i>
+                    {{currentUser.profile.fullName}}
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item">
+                            <i class="setting icon"></i>
+                            Setting
+                        </a>
+                        <div class="divider"></div>
+                        <a class="item" id="btnLogout"><i class="sign out icon"></i> Sign Out</a>
+                    </div>
+                </div>
+            {{else}}
+                {{> render component='MenuItem' name='Authenticate' href='/authenticate' text='Join / Sign in' class='item' icon='sign in icon'}}
+            {{/if}}
             <div class="ui dropdown item">
                 <i class="world icon"></i>
                 English
