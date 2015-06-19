@@ -21,5 +21,11 @@ if(Meteor.isServer){
             Roles.addUsersToRoles(userId, defaultAdmin.roles);
 
         }
+        Meteor.onConnection(function(cb){
+            Meteor.clientConnected = {
+                id : cb.id,
+                clientAddress : cb.clientAddress
+            }
+        })
     })
 }

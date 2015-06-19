@@ -29,7 +29,7 @@
         {{> render component='MenuItem' name='faq' href='/faq' text='FAQ' class='green item' icon='help circle icon'}}
         <div class="right menu">
             {{#if currentUser}}
-                <div class="ui dropdown item">
+                <div class="ui dropdown item" id="drpdown_1" tabindex="-1">
                     <i class="user icon"></i>
                     {{currentUser.profile.fullName}}
                     <i class="dropdown icon"></i>
@@ -45,7 +45,7 @@
             {{else}}
                 {{> render component='MenuItem' name='Authenticate' href='/authenticate' text='Join / Sign in' class='item' icon='sign in icon'}}
             {{/if}}
-            <div class="ui dropdown item">
+            <div class="ui dropdown item" id="drpdown_2">
                 <i class="world icon"></i>
                 English
                 <i class="dropdown icon"></i>

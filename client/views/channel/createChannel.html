@@ -1,7 +1,19 @@
 <template name="createChannel">
-    <div class="segment ui">
-        <p>
-            Create Channel
-        </p>
+    {{> loading_user}}
+    {{>modal_over18yo}}
+</template>
+
+<template name="modal_over18yo">
+    <div class="ui small modal" id="dlg_isOver18yo">
+        <div class="header">
+            Warning!
+        </div>
+        <div class="content">
+            <h3>Are you over 18 year old?</h3>
+        </div>
+        <div class="actions">
+            <div class="cancel ui red button">No, exit now.</div>
+            <div class="ok ui green button">Yes, I over 18 yo</div>
+        </div>
     </div>
 </template>
