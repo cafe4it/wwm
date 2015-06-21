@@ -24,3 +24,7 @@ mizzao:user-status
 semantic:ui-dropdown
 semantic:ui-css
 reactive-var
+dburles:collection-helpers
+meteorhacks:fast-render
+random
+cafe4it:jwplayer

@@ -26,6 +26,6 @@ if(Meteor.isServer){
                 id : cb.id,
                 clientAddress : cb.clientAddress
             }
-        })
+        });
     })
 }

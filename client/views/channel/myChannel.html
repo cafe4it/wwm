@@ -1,5 +1,26 @@
 <template name="myChannel">
-    <div class="header ui">
-        <h1>Welcome to My Channel</h1>
+    <div class="ui page grid">
+        <div class="sixteen wide column">
+            <div class="ui borderless menu">
+                <div class="header item">
+                    Temporary Channel
+                </div>
+                <div class="right menu">
+                    <a class="item"><i class="edit icon"></i> Change your Name</a>
+                    <a class="item"><i class="users icon"></i> Invite Friends</a>
+                    <a class="item"><i class="settings icon"></i> Channel Settings</a>
+                </div>
+            </div>
+        </div>
+        <div class="eight wide column">
+            <div class="segment ui">
+                {{> render component='Player' width='588px' height='476px'}}
+            </div>
+        </div>
+        <div class="eight wide column">
+            <div class="segment ui">
+                chat
+            </div>
+        </div>
     </div>
 </template>
