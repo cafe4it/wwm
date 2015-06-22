@@ -66,6 +66,7 @@ semantic:ui@1.12.1_1
 semantic:ui-css@1.12.3
 semantic:ui-data@1.12.1_1
 semantic:ui-dropdown@1.12.3
+semantic:ui-popup@1.12.3
 service-configuration@1.0.4
 session@1.1.0
 sha@1.0.3
