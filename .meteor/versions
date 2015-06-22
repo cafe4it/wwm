@@ -11,7 +11,6 @@ binary-heap@1.0.3
 blaze@2.1.2
 blaze-tools@1.0.3
 boilerplate-generator@1.0.3
-cafe4it:jwplayer@0.0.2
 callback-hook@1.0.3
 check@1.0.5
 chuangbo:cookie@1.1.0
@@ -51,6 +50,7 @@ mizzao:user-status@0.6.4
 mobile-status-bar@1.0.3
 momentjs:moment@2.8.4
 mongo@1.1.0
+mrt:external-file-loader@0.1.4
 npm-bcrypt@0.7.8_2
 observe-sequence@1.0.6
 ongoworks:security@1.1.0

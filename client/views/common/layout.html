@@ -5,6 +5,7 @@
     <meta content="WatchWithMe -Watch Porn Clip together and chat" name="description">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <link href="images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <script type="text/javascript" src="js/jwplayer.js"></script>
 </head>
 
 <template name="mainLayout">
@@ -34,12 +35,6 @@
                     {{currentUser.profile.fullName}}
                     <i class="dropdown icon"></i>
                     <div class="menu">
-                        {{#if currentUser.isGuest}}
-                            <a class="item">
-                                <i class="spy icon"></i>
-                                Become a Member
-                            </a>
-                        {{/if}}
                         {{#if currentUser.isRegisterUser}}
                         <a class="item">
                             <i class="setting icon"></i>

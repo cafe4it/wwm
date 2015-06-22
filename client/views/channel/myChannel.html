@@ -7,14 +7,20 @@
                 </div>
                 <div class="right menu">
                     <a class="item"><i class="edit icon"></i> Change your Name</a>
-                    <a class="item"><i class="users icon"></i> Invite Friends</a>
+                    {{> render component='InviteFriends'}}
+                    {{#if currentUser.isGuest}}
+                        <a class="item">
+                            <i class="spy icon"></i>
+                            Become a Member
+                        </a>
+                    {{/if}}
                     <a class="item"><i class="settings icon"></i> Channel Settings</a>
                 </div>
             </div>
         </div>
         <div class="eight wide column">
             <div class="segment ui">
-                {{> render component='Player' width='588px' height='476px'}}
+                {{> render component='Player' width='512' height='384px'}}
             </div>
         </div>
         <div class="eight wide column">

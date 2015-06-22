@@ -27,4 +27,4 @@ reactive-var
 dburles:collection-helpers
 meteorhacks:fast-render
 random
-cafe4it:jwplayer
+mrt:external-file-loader
