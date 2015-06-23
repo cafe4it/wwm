@@ -14,9 +14,9 @@ var playComponent = FlowComponents.define('Player',function(props){
         var playerId = this.get('playerId');
 
         var JWPlayer = jwplayer(playerId).setup({
-            file: 'http://porn.im.2a721800.10505622.x.xvideos.com/videos/flv/a/5/8/xvideos.com_a58830d084666722ec636ed53967fe93.flv?e=1434996884&ri=1024&rs=85&h=6a83ad5bc46510071b70c0b9bd335464',
-            height: this.height,
-            width : this.width
+            file: 'http://content.bitsontherun.com/videos/lWMJeVvV-364767.mp4',
+            width : '100%',
+            aspectratio: "16:9"
         });
 
         JWPlayer.onReady(function(){

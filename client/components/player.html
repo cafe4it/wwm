@@ -1,3 +1,6 @@
 <template name="Player">
-    <div id="{{state$playerId}}"  style="height: {{state$props.height}}"></div>
+    <p class="currentPlaying">{{state$title}}</p>
+    <div class="embed-responsive embed-responsive-16by9">
+        <div id="{{state$playerId}}" class="embed-responsive-item"></div>
+    </div>
 </template>

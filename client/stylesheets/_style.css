@@ -1,3 +1,52 @@
-.channel_player_controls{
+.channel_player_controls {
     margin-top: 10px !important;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 120%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container .jwplayer, .video-container .jwmain, .video-container .jwvideo {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100%;
+}
+
+.embed-responsive.embed-responsive-16by9 {
+    padding-bottom: 56.25%;
+}
+.embed-responsive {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+
+.embed-responsive .jwplayer, .embed-responsive .jwmain, .embed-responsive .jwvideo {
+    border: 0 none !important;
+    bottom: 0 !important;
+    height: 100% !important;
+    left: 0 !important;
+    position: absolute !important;
+    top: 0 !important;
+    width: 100% !important;
+}
+.embed-responsive .jwplayer, .embed-responsive .jwmain, .embed-responsive .jwvideo {
+    border: 0 none !important;
+    bottom: 0 !important;
+    height: 100% !important;
+    left: 0 !important;
+    position: absolute !important;
+    top: 0 !important;
+    width: 100% !important;
+}
+
+.chatBox-container{
+
 }
