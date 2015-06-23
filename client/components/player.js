@@ -12,7 +12,7 @@ var playComponent = FlowComponents.define('Player',function(props){
 
     this.onRendered(function(){
         var playerId = this.get('playerId');
-
+        var tmp = 'http://content.bitsontherun.com/videos/lWMJeVvV-364767.mp4';
         var JWPlayer = jwplayer(playerId).setup({
             file: 'http://content.bitsontherun.com/videos/lWMJeVvV-364767.mp4',
             width : '100%',

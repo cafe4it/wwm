@@ -29,3 +29,5 @@ meteorhacks:fast-render
 random
 mrt:external-file-loader
 semantic:ui-popup
+nxcong:xray
+meteorhacks:async

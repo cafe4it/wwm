@@ -1,8 +1,31 @@
 <template name="PlayListControls">
     <div class="green small icon ui buttons channel_player_controls">
-        <div class="ui icon button hasPopup" data-content="Play 1 clip"><i class="add square icon"></i></div>
+        <div id="btnSearch" class="ui icon button hasPopup" data-content="Search & Play"><i class="search icon"></i></div>
         <div class="ui icon button hasPopup" data-content="View playlist"><i class="browser icon"></i></div>
         <div class="ui button"><i class="upload icon"></i></div>
         <div class="ui button"><i class="download icon"></i></div>
+    </div>
+    {{> dlg_SearchClip}}
+</template>
+
+<template name="dlg_SearchClip">
+    <div class="ui small modal" id="dlg_SearchClip">
+        <div class="header">
+            Search & Play
+        </div>
+        <div class="content">
+            <div class="ui grid">
+                <div class="column">
+                    <div class="ui fluid action input">
+                        <input type="text" id="txtSearchUrl" placeholder="http://www.xvideos.com/video.../...">
+                        <button class="ui button" id="btnParseUrl">Get</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="cancel ui red button">Exit</div>
+            <div class="ok ui green button">Play Now</div>
+        </div>
     </div>
 </template>
